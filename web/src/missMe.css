@@ -1,0 +1,84 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle-button {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 255, 0, 0.7);
+  transition: all 0.3s ease;
+}
+
+.circle-button:hover {
+  box-shadow: 0px 0px 15px rgba(0, 255, 0, 1);
+  background-color: rgba(0, 255, 0, 1);
+  transform: scale(1.1);
+}
+
+.heart-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.heart-icon img {
+  width: 44px; /* Adjust width as needed */
+  height: 44px; /* Adjust height as needed */
+  display: block; /* To prevent any default inline spacing */
+}
+
+.notification-count {
+  position: absolute;
+  top: 40px; /* Adjust this value based on the height of the heart icon */
+  right: 20px; /* Aligns horizontally with the heart icon */
+  background-color: red; /* Optional: for visibility */
+  color: white; /* Optional: for visibility */
+  padding: 2px 5px; /* Optional: for styling */
+  border-radius: 10px; /* Optional: for styling */
+  font-size: 14px; /* Optional: for styling */
+  text-align: center;
+}
+
+.session-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust as needed */
+  /* Add other styling as needed (e.g., padding, margin) */
+}
+
+.sessionId {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #f2f2f2; /* Light grey background for visibility */
+  color: #333; /* Dark text for contrast */
+  padding: 10px 20px; /* Comfortable padding around the text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-family: 'Arial', sans-serif; /* Modern, clean font */
+  font-size: 16px; /* Readable font size */
+  border: 1px solid #ddd; /* Light border */
+  text-align: center; /* Center text alignment */
+  max-width: 400px; /* Maximum width */
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.copy-button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.copy-button:hover {
+  background-color: #e0e0e0;
+}
