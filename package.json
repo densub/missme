@@ -1,0 +1,9 @@
+{
+    "name": "missme",
+    "version": "0.1.0",
+    "scripts": {
+        "install": "npm --prefix=web install && npm --prefix=serverless install",
+        "test": "npm --prefix=web run test"
+    }
+
+}
