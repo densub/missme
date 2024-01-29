@@ -15,10 +15,8 @@ function MissMe() {
   
   useEffect(() => {
     const newSocket = io(SOCKET_SERVER_URL, { query: { sessionId, user } });
-    console.log(newSocket)
-    setSocket(newSocket);
+    newSocket.emit('joinSession', { user, sessionId });
     newSocket.on('missCountUpdated', (data) => {
-      console.log('DATA', data)
       if (data.sessionId === sessionId) {
         setMissCount(data.missCount);
       }
