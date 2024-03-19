@@ -6,7 +6,7 @@ import axios from 'axios'
 import io from 'socket.io-client';
 
 function MissMe() {
-  const SOCKET_SERVER_URL = 'http://localhost:3000';
+  const SOCKET_SERVER_URL = 'http://52.23.157.77:3000';
   const [socket, setSocket] = useState(null);
   const [missCount, setMissCount] = useState(0);
   const location = useLocation();
